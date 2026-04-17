@@ -1,0 +1,90 @@
+.contact-info-section {
+  padding: 5rem 5%;
+  background-color: var(--color-bg-dark);
+}
+
+.ci-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+/* Left side */
+.ci-left {
+  flex: 1;
+  max-width: 450px;
+}
+
+.ci-title {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.ci-description {
+  color: #a0aab8;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 380px;
+}
+
+.ci-details-row {
+  display: flex;
+  gap: 3rem;
+}
+
+.ci-detail-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.ci-detail-text {
+  color: #a0aab8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Right side - Map */
+.ci-right {
+  flex: 1;
+}
+
+.ci-map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.ci-map-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.ci-map-caption {
+  background: rgba(0, 0, 0, 0.75);
+  color: #ccc;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0.75rem 1rem;
+}
+
+@media (max-width: 900px) {
+  .ci-container {
+    flex-direction: column;
+  }
+  .ci-left {
+    max-width: 100%;
+  }
+}
+

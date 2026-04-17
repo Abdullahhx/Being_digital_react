@@ -1,0 +1,140 @@
+.our-projects-section {
+  padding: 6rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.op-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.op-section-badge {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.op-title {
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  font-weight: 600;
+  color: #fdfad5;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.op-subtitle {
+  color: #a0aab8;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Grid */
+.op-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.op-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  /* slightly smaller gap to fit 3 columns */
+}
+
+.op-card {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+/* Image wrapper */
+.op-img-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.op-img-wrapper img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.op-card:hover .op-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Tag */
+.op-tag {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background-color: #fdfad5;
+  color: #0f1218;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  border-radius: 20px;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+
+/* Content */
+.op-card-content h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.op-card-content p {
+  color: #8c96a5;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* CTA */
+.op-cta {
+  margin-top: 4rem;
+}
+
+.op-button {
+  background: linear-gradient(90deg, #2b6cff, #a42bff);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.op-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(164, 43, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  .op-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

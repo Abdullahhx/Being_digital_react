@@ -1,0 +1,132 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 64px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  height: 76px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 90px;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-text-top {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.logo-text-bottom {
+  color: #00d2ff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.text-accent {
+  color: #00d2ff !important;
+}
+
+.navbar-center.glass-pill-nav {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  padding: 0 48px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #00d2ff;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+}
+
+.nav-cta.pill-button {
+  background: #00d2ff;
+  color: #000;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.nav-cta.pill-button:hover {
+  background: #00b8e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 20px 30px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 16px 24px;
+  }
+}

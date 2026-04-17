@@ -1,0 +1,155 @@
+.expanded-services-section {
+  padding: 80px 60px 120px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.expanded-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.expanded-service-card {
+  background: #0d0d0d;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.expanded-service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 194, 232, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Correct high-res wave texture integration */
+.card-corner-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/service_card_bg.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.5; /* Significant opacity to see the glossy waves clearly */
+  pointer-events: none;
+  z-index: 0;
+  transition: all 0.5s ease;
+  filter: brightness(0.7); /* Keep it dark enough for text */
+}
+
+/* Fade the top part of the image to black for guaranteed text readability */
+.card-corner-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0d0d0d 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.expanded-service-card:hover .card-corner-ribbon {
+  opacity: 0.8;
+  filter: brightness(0.9);
+}
+
+.expanded-icon-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: #fff;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.expanded-icon-wrapper svg {
+  width: 22px;
+  height: 22px;
+}
+
+.expanded-service-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+  z-index: 1;
+  letter-spacing: -0.5px;
+}
+
+.expanded-service-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+  z-index: 1;
+  font-weight: 400;
+}
+
+.expanded-services-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.innovate-text {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.cta-button.pill-button {
+  background: var(--color-primary);
+  color: #000;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button.pill-button:hover {
+  background: #00e0ff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 194, 232, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .expanded-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .expanded-services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .expanded-services-section {
+    padding: 60px 20px 80px;
+  }
+  .expanded-services-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}

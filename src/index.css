@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg-dark: #000000;
+  --color-bg-alt: #0a0a0a;
+  --color-primary: #00C2E8; /* Cyan / Electric Blue */
+  --color-accent: #F5E0B7; /* Gold / Pale Yellow */
+  --color-text: #ffffff;
+  --color-text-muted: #888888;
+  
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text);
+  background-color: var(--color-bg-dark);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+/* Reusable Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #FFFFFF, #00C2E8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pill-button {
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pill-button.primary {
+  background-color: var(--color-primary);
+  color: #000;
+}
+
+.pill-button.primary:hover {
+  background-color: #00e0ff;
+  box-shadow: 0 0 15px rgba(0, 194, 232, 0.4);
+}
+
+.pill-button.outline {
+  border: 2px solid var(--color-text);
+  background: transparent;
+  color: var(--color-text);
+}
+
+.pill-button.outline:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Shared Background for Hero and Video Section */
+.hero-video-wrapper {
+  position: relative;
+  background-image: url('./assets/testimonials_bg.png');
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}

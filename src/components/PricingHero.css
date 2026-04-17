@@ -1,0 +1,60 @@
+.pricing-hero-container {
+  position: relative;
+  text-align: center;
+  padding: 200px 5% 100px; /* Increased top padding from 120px to 200px */
+  background-color: var(--color-bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('../assets/testimonials_bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed; /* Parallax effect for consistency */
+}
+
+/* Semi-transparent dark overlay for text readability over the rich texture */
+.pricing-hero-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.ph-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.ph-title {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 500;
+  color: #fdfad5;
+  line-height: 1.1;
+  max-width: 800px;
+  margin: 0;
+}
+
+.ph-glow-bg {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 194, 232, 0.15) 0%, transparent 60%);
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+}

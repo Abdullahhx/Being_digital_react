@@ -1,0 +1,96 @@
+.contact-hero-section {
+  text-align: left; 
+  padding: 200px 5% 100px; /* Increased top padding from 120px to 200px */
+  background-color: #0b0d13;
+  background-image: url('../assets/testimonials_bg.png'); 
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Parallax effect for consistency */
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contact-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, rgba(11, 13, 19, 1) 0%, rgba(11, 13, 19, 0.8) 40%, transparent 100%);
+  z-index: 0;
+}
+
+.ch-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+}
+
+.ch-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.ch-subtitle {
+  font-size: 1.15rem;
+  color: #a0aab8;
+  margin: 0 0 3.5rem 0;
+  line-height: 1.6;
+}
+
+.ch-actions {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.ch-button {
+  background: linear-gradient(90deg, #3a5cff, #6f22ff);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.ch-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(111, 34, 255, 0.4);
+}
+
+.ch-arrow {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.ch-phone-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ch-phone-label {
+  color: #fdfad5;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.ch-phone-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0;
+}

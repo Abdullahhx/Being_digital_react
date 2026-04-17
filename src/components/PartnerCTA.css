@@ -1,0 +1,107 @@
+.partner-cta-section {
+  padding: 120px 5%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.partner-cta-container {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partner-badge-wrapper {
+  margin-bottom: 2rem;
+}
+
+.partner-badge-wrapper .section-badge {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.partner-cta-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600;
+  color: #fdfad5;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 2.5rem;
+}
+
+.partner-cta-description {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
+.partner-cta-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-btn-primary {
+  background: #00c2e8;
+  color: #000;
+  border: none;
+  padding: 1.1rem 2.8rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-primary:hover {
+  background: #009dbd;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 194, 232, 0.3);
+}
+
+.cta-btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 1.1rem 2.8rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .partner-cta-title {
+    font-size: 2.2rem;
+  }
+  .partner-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-btn-primary, .cta-btn-outline {
+    width: 100%;
+  }
+}

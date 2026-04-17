@@ -1,0 +1,66 @@
+.about-hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 5%;
+  background: var(--color-bg-dark);
+  overflow: hidden;
+}
+
+.about-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../assets/testimonials_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect for consistency */
+  opacity: 0.7; /* Increased opacity for the rich texture */
+  z-index: 0;
+}
+
+/* Semi-transparent dark overlay for text readability */
+.about-hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.ah-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.ah-badge {
+  display: inline-block;
+  padding: 0.5rem 1.75rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+.ah-title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 500;
+  color: #fdfad5;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.ah-subtitle {
+  font-size: 1.15rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
