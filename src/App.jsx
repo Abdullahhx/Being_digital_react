@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import OurTeamPage from './pages/OurTeamPage';
@@ -15,6 +16,7 @@ function App() {
     <div className="app-container">
       {/* Background glow effects */}
       <div className="bg-glow top-glow"></div>
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>

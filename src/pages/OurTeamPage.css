@@ -15,7 +15,6 @@
   background-image: url('../assets/testimonials_bg.png');
   background-size: cover;
   background-position: center bottom;
-  background-attachment: fixed;
   overflow: hidden;
 }
 

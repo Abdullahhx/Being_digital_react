@@ -165,14 +165,24 @@
   .pricing-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    max-width: 450px;
   }
   .pricing-section {
-    padding: 60px 20px 80px;
+    padding: 60px 5% 80px;
   }
   .pricing-main-title {
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 8vw, 2.8rem);
   }
   .pricing-card.premium-style {
-    padding: 50px 30px 30px;
+    padding: 50px 30px 40px;
+    text-align: center;
+  }
+  .pack-features-list li {
+    font-size: 1rem;
+    justify-content: center;
+  }
+  .pricing-cta-button {
+    width: 100%;
+    justify-content: center;
   }
 }

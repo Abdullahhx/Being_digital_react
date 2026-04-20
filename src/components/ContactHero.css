@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Parallax effect for consistency */
   min-height: 70vh;
   display: flex;
   align-items: center;

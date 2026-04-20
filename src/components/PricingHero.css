@@ -10,7 +10,6 @@
   background-image: url('../assets/testimonials_bg.png');
   background-size: cover;
   background-position: center bottom;
-  background-attachment: fixed; /* Parallax effect for consistency */
 }
 
 /* Semi-transparent dark overlay for text readability over the rich texture */

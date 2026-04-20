@@ -7,7 +7,6 @@
   background-image: url('../assets/testimonials_bg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Parallax effect for premium feel */
 }
 
 /* Semi-transparent dark overlay for text readability over the rich texture */
@@ -25,7 +24,7 @@
 /* Background Abstract Glows */
 .tm-bg-glow {
   position: absolute;
-  filter: blur(100px);
+  filter: blur(50px);
   z-index: 0;
   pointer-events: none;
 }
@@ -162,13 +161,29 @@
 }
 
 @media (max-width: 992px) {
+  .testimonials-section {
+    padding: 60px 5% 80px;
+  }
   .tm-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tm-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  .tm-header {
+    margin-bottom: 2.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .tm-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .tm-text-card {
+    padding: 2rem 1.5rem;
   }
 }
