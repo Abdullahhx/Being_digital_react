@@ -51,6 +51,15 @@
   color: #fdfad5; /* Signature cream */
   line-height: 1.1;
   letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+}
+
+.team-subtitle {
+  font-size: 1.15rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Team GridSection */

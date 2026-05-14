@@ -53,5 +53,13 @@
   font-weight: 500;
   color: #fdfad5;
   line-height: 1.1;
-  margin: 0;
+  margin: 0 0 1.5rem;
+}
+
+.sh-subtitle {
+  font-size: 1.15rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
 }

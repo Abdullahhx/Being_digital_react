@@ -33,12 +33,16 @@ const teamMembers = [
 
 const OurTeamPage = () => {
   return (
-    <div className="our-team-page">
+    <div className="page-content our-team-page">
       {/* Team Hero */}
       <section className="team-hero">
         <div className="team-hero-content">
           <div className="team-badge">Our Team</div>
           <h1 className="team-title">Meet the minds behind Being Digitals</h1>
+          <p className="team-subtitle">
+            A diverse team of innovators, designers, and developers dedicated to 
+            transforming your digital vision into reality.
+          </p>
         </div>
       </section>
 
