@@ -52,7 +52,7 @@ const Pricing = () => {
 
       <div className="pricing-grid">
         {pricingPacks.map((pack, index) => (
-          <div key={index} className="pricing-card premium-style">
+          <div key={index} className="pricing-card premium-style reveal">
             <div className="card-top-tag">{pack.badge}</div>
             
             <div className="card-top-content">

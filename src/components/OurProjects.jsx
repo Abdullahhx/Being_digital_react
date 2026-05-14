@@ -60,7 +60,7 @@ const OurProjects = ({
 
       <div className={`op-grid cols-${columns}`}>
         {projects.map((project, index) => (
-          <div key={index} className="op-card">
+          <div key={index} className="op-card reveal">
             <div className="op-img-wrapper">
               <span className="op-tag">{project.tag}</span>
               <img src={project.image} alt={project.title} />
