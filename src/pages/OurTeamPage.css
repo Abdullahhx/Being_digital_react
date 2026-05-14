@@ -6,12 +6,13 @@
 /* Team Hero */
 .team-hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   text-align: center;
-  padding: 120px 5% 60px;
+  padding: 30vh 5% 60px;
   background-image: url('../assets/testimonials_bg.png');
   background-size: cover;
   background-position: center bottom;

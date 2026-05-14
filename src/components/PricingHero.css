@@ -1,11 +1,13 @@
 .pricing-hero-container {
   position: relative;
   text-align: center;
-  padding: 200px 5% 100px; /* Increased top padding from 120px to 200px */
+  padding: 30vh 5% 60px; 
+  min-height: 100vh;
   background-color: var(--color-bg-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   overflow: hidden;
   background-image: url('../assets/testimonials_bg.png');
   background-size: cover;
