@@ -64,3 +64,20 @@
   max-width: 600px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding-top: 150px;
+  }
+  .ah-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .ah-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .ah-badge {
+    margin-bottom: 1.5rem;
+  }
+}

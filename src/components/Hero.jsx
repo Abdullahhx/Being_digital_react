@@ -16,10 +16,10 @@ const Hero = () => {
         </p>
         <div className="hero-actions">
           <a href="#contact" className="hero-btn primary">
-            Start Your Project
+            <span className="btn-arrow">→</span> Start Your Project
           </a>
           <a href="#services" className="hero-btn outline">
-            See Our Process
+            <span className="btn-arrow">→</span> See Our Process
           </a>
         </div>
       </div>

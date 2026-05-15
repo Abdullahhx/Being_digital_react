@@ -133,8 +133,28 @@
 }
 
 @media (max-width: 992px) {
-  .op-grid {
+  .op-grid, .op-grid.cols-3 {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .op-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .op-subtitle {
+    font-size: 1rem;
+  }
+  .op-section-badge {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+  .op-card-content h3 {
+    font-size: 1.2rem;
+  }
+  .op-card-content p {
+    font-size: 0.9rem;
   }
 }

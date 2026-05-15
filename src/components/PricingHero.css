@@ -69,3 +69,20 @@
   z-index: 0;
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .pricing-hero-container {
+    padding-top: 150px;
+  }
+  .ph-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .ph-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .ph-badge {
+    margin-bottom: 1.5rem;
+  }
+}
