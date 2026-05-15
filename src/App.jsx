@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -12,6 +12,39 @@ import ContactPage from './pages/ContactPage';
 import './index.css';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.05,
+      rootMargin: '0px 0px -20px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    const startObserving = () => {
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach(el => {
+        // Reset active class if needed or just observe
+        observer.observe(el);
+      });
+    };
+
+    // Slight delay to ensure React has rendered the DOM
+    const timer = setTimeout(startObserving, 200);
+
+    return () => {
+      clearTimeout(timer);
+      observer.disconnect();
+    };
+  }, [location]);
+
   return (
     <div className="app-container">
       {/* Background glow effects */}
