@@ -5,8 +5,8 @@ import OurProjects from '../components/OurProjects';
 import Testimonials from '../components/Testimonials';
 
 import aboutProject1Img from '../assets/about_project_1.webp';
-import aboutProject2Img from '../assets/about_project_2.webp';
-import aboutProject3Img from '../assets/about_project_3.webp';
+import novahireImg from '../assets/novahire.png';
+import retailsenseImg from '../assets/retailsense.png';
 
 const aboutProjectsData = [
   {
@@ -19,13 +19,13 @@ const aboutProjectsData = [
     tag: 'TECHNOLOGY',
     title: 'NovaHire – AI Recruitment Platform',
     description: 'Automated candidate screening, matching, and outreach using machine learning.',
-    image: aboutProject2Img
+    image: novahireImg
   },
   {
     tag: 'RETAIL',
     title: 'RetailSense – Smart Store Analytics',
     description: 'AI-powered shopper insights and predictive inventory management for global retail chains.',
-    image: aboutProject3Img
+    image: retailsenseImg
   }
 ];
 

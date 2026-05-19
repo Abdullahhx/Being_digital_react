@@ -1,35 +1,35 @@
 import React from 'react';
 import './OurProjects.css';
 
-import ecommerceImg from '../assets/ecommerce_project.png';
-import managementImg from '../assets/management_project.png';
-import technologyImg from '../assets/technology_project.png';
-import brandingImg from '../assets/branding_project.png';
+import novahireImg from '../assets/novahire.png';
+import retailsenseImg from '../assets/retailsense.png';
+import finvisionImg from '../assets/finvision.webp';
+import medassistImg from '../assets/medassist.png';
 
 const defaultProjects = [
   {
     tag: 'E COMMERCE',
     title: 'NovaHire – AI Recruitment Platform',
     description: 'Automated candidate screening, matching, and outreach using machine learning.',
-    image: ecommerceImg
+    image: novahireImg
   },
   {
     tag: 'MANAGEMENT',
     title: 'RetailSense – Smart Store Analytics',
     description: 'AI-powered shopper insights and predictive inventory management for global retail chains.',
-    image: managementImg
+    image: retailsenseImg
   },
   {
     tag: 'TECHNOLOGY',
     title: 'FinVision – Predictive Finance Dashboard',
     description: 'Real-time forecasting and personalized investment insights using data modeling.',
-    image: technologyImg
+    image: finvisionImg
   },
   {
     tag: 'BRANDING',
     title: 'MedAssist – Virtual Health Companion',
     description: 'AI chatbot and patient tracking platform, improving appointment adherence by 35%.',
-    image: brandingImg
+    image: medassistImg
   }
 ];
 
