@@ -13,7 +13,7 @@
   flex-direction: column;
   text-align: center;
   padding: 30vh 5% 60px;
-  background-image: url('../assets/testimonials_bg.png');
+  background-image: url('../assets/team_hero_bg.webp');
   background-size: cover;
   background-position: center bottom;
   overflow: hidden;
@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+  background: rgba(0, 0, 0, 0); /* Removed dark overlay to keep image bright */
   z-index: 0;
 }
 
