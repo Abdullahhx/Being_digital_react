@@ -1,12 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+  const location = useLocation();
+  const isServicesPage = location.pathname === '/services';
+
   return (
     <footer className="footer-section">
       {/* Abstract background image overlay */}
-      <div className="footer-bg-overlay"></div>
+      <div className={`footer-bg-overlay ${isServicesPage ? 'services-footer-bg' : ''}`}></div>
 
       <div className="footer-inner">
         {/* Centered navigation */}

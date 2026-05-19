@@ -17,6 +17,10 @@
   z-index: 0;
 }
 
+.footer-bg-overlay.services-footer-bg {
+  background-image: url('../assets/services_footer_bg.webp');
+}
+
 /* Dark overlay to ensure link readability */
 .footer-section::after {
   content: '';
