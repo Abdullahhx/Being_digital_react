@@ -68,6 +68,7 @@ const AboutPage = () => {
         testimonialsData={aboutTestimonialsData}
         title="Our Clients Reviews"
         showBadge={false}
+        showBg={false}
       />
     </div>
   );

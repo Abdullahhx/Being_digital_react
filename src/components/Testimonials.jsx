@@ -45,10 +45,11 @@ const Testimonials = ({
   testimonialsData = defaultTestimonials,
   title = "Trusted by Innovators Worldwide",
   showBadge = true,
-  badgeTitle = "Testimonials"
+  badgeTitle = "Testimonials",
+  showBg = true
 }) => {
   return (
-    <section className="testimonials-section" id="testimonials">
+    <section className={`testimonials-section ${showBg ? '' : 'no-bg'}`} id="testimonials">
       {/* Background glowing effects to mimic the abstract image styling */}
       <div className="tm-bg-glow glow-left"></div>
       <div className="tm-bg-glow glow-right"></div>

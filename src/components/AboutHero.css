@@ -15,10 +15,10 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('../assets/testimonials_bg.png');
+  background-image: url('../assets/about_hero_new.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.7; /* Increased opacity for the rich texture */
+  opacity: 1; /* Keep it fully opaque */
   z-index: 0;
 }
 
@@ -27,7 +27,7 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0); /* Removed dark overlay to keep image bright */
   z-index: 1;
 }
 
