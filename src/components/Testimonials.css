@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75); /* Dark enough for readability but shows the texture */
+  background: rgba(0, 0, 0, 0); /* Dark overlay removed to keep image bright */
   z-index: 1;
 }
 
