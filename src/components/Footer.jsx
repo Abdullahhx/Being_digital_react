@@ -4,12 +4,15 @@ import './Footer.css';
 
 const Footer = () => {
   const location = useLocation();
-  const isServicesOrPricing = location.pathname === '/services' || location.pathname === '/pricing';
+  const isCustomFooterBg = 
+    location.pathname === '/services' || 
+    location.pathname === '/pricing' || 
+    location.pathname === '/our-team';
 
   return (
     <footer className="footer-section">
       {/* Abstract background image overlay */}
-      <div className={`footer-bg-overlay ${isServicesOrPricing ? 'services-footer-bg' : ''}`}></div>
+      <div className={`footer-bg-overlay ${isCustomFooterBg ? 'services-footer-bg' : ''}`}></div>
 
       <div className="footer-inner">
         {/* Centered navigation */}
