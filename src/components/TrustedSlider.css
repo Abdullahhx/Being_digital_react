@@ -50,6 +50,19 @@
   opacity: 1;
 }
 
+.marquee-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.marquee-item:hover .marquee-logo {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
