@@ -2,10 +2,10 @@ import React from 'react';
 import './OurTeamPage.css';
 import ContactFormBlock from '../components/ContactFormBlock';
 
-import teamEthan from '../assets/team_ethan.png';
-import teamMaya from '../assets/team_maya.png';
-import teamRyan from '../assets/team_ryan.png';
-import teamLiam from '../assets/team_liam.png';
+import teamEthan from '../assets/team_ethan_new.webp';
+import teamMaya from '../assets/team_maya_new.webp';
+import teamRyan from '../assets/team_ryan_new.webp';
+import teamLiam from '../assets/team_liam_new.webp';
 import teamGroup from '../assets/team_group.png';
 
 const teamMembers = [
